@@ -20,12 +20,14 @@
         <header>
             <img src="images/logo/Booki.png" alt="Logo Booki" class="booki-logo"/>
             <nav>
-                <button id="button-hébergement">
-                    Hébergement
-                </button>
-                <button id="button activité">
-                    Activités
-                </button>
+                <ul class="liste-nav">
+                    <li>
+                        Hébergement
+                    </li>
+                    <li>
+                        Activités
+                    </li>
+                </ul>
             </nav>
         </header>
         <div class="info-group">
@@ -34,18 +36,43 @@
                 En plein centre-ville ou en pleine nature
             </div>
             <div class="search-bar">
-                <div class="localisasion">
-                    <i class="fa-solid fa-location-dot" style="height: 18px; width: 14px; color: #000000;"></i>
-                </div>
-                <div class="recherche-ville">
-                    <input style="height:21px ; width:147px;">
-                </div>
-                <button class="rechercher">
-                    Rechercher
-                </button>
+                    <form method="get" action="" class="search-bar">
+                        <div class="localisation">
+                            <i class="fa-solid fa-location-dot" style="height: 18px; width: 14px; color: #000000;"></i>
+                        </div>
+                        <p>
+                            <label for="lieux"></label>
+                            <input type="text" placeholder="Marseille, France" size="20" maxlength="20" >
+                        </p>
+                        <button class="rechercher">
+                            Rechercher
+                        </button>
+                    </form>
             </div>
             <div class="filter-bar">
-
+                <h3>Filtres</h3>
+                <button class="filter">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Economique
+                </button>
+                <button class="filter">
+                    <i class="fa-solid fa-person"></i>
+                    Familial
+                </button>
+                <button class="filter">
+                    <i class="fa-solid fa-heart"></i>
+                    Romantique
+                </button>
+                <button class="filter">
+                    <i class="fa-solid fa-fire"></i>
+                    Nos pépites
+                </button>
+            </div>
+            <div class="infobar">
+                <div class="icon-infobar">
+                    <img class="img-info" alt="Information" src="images/icones/Property 1=info.png"/>
+                </div>
+                Plus de 500 logements sont disponible dans cette ville
             </div>
         </div>
         <main>
