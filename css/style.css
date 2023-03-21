@@ -19,6 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .booki-logo {
@@ -32,8 +33,29 @@ header {
 .liste-nav {
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 
+li {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
+.liste-nav a {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.liste-nav a:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
 /***body***/
 body {
     display: flex;
@@ -47,6 +69,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .search-bar {
@@ -93,7 +116,7 @@ input {
 }
 
 .rechercher:hover {
-    
+    cursor: pointer;
 }
 
 .filter-bar {
@@ -114,6 +137,13 @@ input {
     gap: 10px;
     font-size: 17px;
     font-weight: 700;
+    background-color: #FFFFFF;
+}
+
+.filter:hover{
+    cursor: pointer;
+    background-color: #DEEBFF;
+    border-color: #0065FC;
 }
 
 .infobar {
@@ -133,6 +163,7 @@ input {
     margin-right: 5px;
 }
 
+/**main content**/
 
 .main-container {
     width: 100%;
@@ -146,11 +177,34 @@ input {
     font-size: 22px;
 }
 
+.card-m {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-m:hover{
+    cursor: pointer;
+}
+
+.card-m img {
+    object-fit: cover;
+}
+
+.card-m h3 {
+    font-size: 16px;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .card img {
@@ -166,8 +220,12 @@ input {
 }
 
 .neutralStar {
-    color: var(--main-bg-color)
+    color:  #F2F2F2;
 }
+
+/**Hébergement a Marseille**/
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -185,6 +243,61 @@ input {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.card-m {
+    height: 207.25px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-main img {
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.card-main .card-m-content{
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card-m-txt  {
+    white-space: nowrap;
+}
+
+.card-m-txt h3 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card-m-txt p {
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -232,6 +345,78 @@ input {
     margin-bottom: 5px;
 }
 
+/****Activité****/
+
+.activites {
+    padding: 30px;
+}
+
+.activites h2 {
+    margin-bottom: 30px;
+}
+
+.activities-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.activities-card .card {
+    width: 297.5px;
+    height: 439px;
+    padding: 0;
+}
+
+.activities-card .card a {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-card img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activities-card h3 {
+    padding: 20px;
+}
+
+/**Footer**/
+
+.footer-info {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-info .footer-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-info .footer-section {
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-info ul {
+    padding-left: 0;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-info .liens-apropos {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
 
 
 
@@ -270,9 +455,13 @@ input {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .filter-bar {
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
 }

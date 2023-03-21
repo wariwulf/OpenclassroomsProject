@@ -2,7 +2,7 @@
 https://openclassrooms.com/fr/paths/717/projects/1332/assignment
 # Giel Robin
 
-# Booki Desktop
+# Booki Desktop Maquette
 https://www.figma.com/file/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=3%3A0&t=gyjJFyY7AmGqakUL-0
 
 # Analyse de la maquette et shématisation:
@@ -27,4 +27,5 @@ https://www.figma.com/file/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki-(desktop%2C-mo
     O --> Q(Hébergement)
     O --> R(Assistance)
 ```
-
+# Résultat du Projet
+https://wariwulf.github.io/OpenclassroomsProject/
