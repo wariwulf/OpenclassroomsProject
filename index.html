@@ -36,37 +36,41 @@
                 En plein centre-ville ou en pleine nature
             </div>
             <div class="search-bar">
-                    <form method="get" action="" class="search-bar">
+                    <form method="get" class="search-bar">
                         <div class="localisation">
                             <i class="fa-solid fa-location-dot" style="height: 18px; width: 14px; color: #000000;"></i>
-                        </div>
-                        <p>
-                            <label for="lieux"></label>
-                            <input type="text" placeholder="Marseille, France" size="20" maxlength="20" >
-                        </p>
-                        <button class="rechercher">
-                            Rechercher
+                        </div>                        
+                            <input type="text" placeholder="Marseille, France" style="width: 100%;">
+                        <button class="rechercher" type="button">
+                            <span class="text-search">Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
                         </button>
                     </form>
             </div>
             <div class="filter-bar">
                 <h3>Filtres</h3>
-                <button class="filter">
-                    <i class="fa-solid fa-money-bill-wave"></i>
-                    Economique
-                </button>
-                <button class="filter">
-                    <i class="fa-solid fa-person"></i>
-                    Familial
-                </button>
-                <button class="filter">
-                    <i class="fa-solid fa-heart"></i>
-                    Romantique
-                </button>
-                <button class="filter">
-                    <i class="fa-solid fa-fire"></i>
-                    Nos pépites
-                </button>
+                <div class="button-filter">
+                    <section class="filter-1">                    
+                        <button class="filter">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            Economique
+                        </button>
+                        <button class="filter">
+                            <i class="fa-solid fa-person"></i>
+                            Familial
+                        </button>
+                    </section>
+                    <section class="filter-2">
+                        <button class="filter">
+                            <i class="fa-solid fa-heart"></i>
+                            Romantique
+                        </button>
+                        <button class="filter">
+                            <i class="fa-solid fa-fire"></i>
+                            Nos pépites
+                        </button>
+                    </section>
+                </div>
             </div>
             <div class="infobar">
                 <div class="icon-infobar">
