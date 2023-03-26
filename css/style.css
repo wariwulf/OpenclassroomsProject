@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -142,7 +143,7 @@ input {
     align-items: flex-start;
     align-items: center;
     gap: 15px;
-    width: 758px;
+    width: 100%;
 }
 
 .button-filter {
@@ -171,9 +172,8 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 100%;
     height: 50px;
-    left: 69px;
     border-radius: 25px;
     padding: 4px 19px 4px 19px;
     gap: 10px;
@@ -317,7 +317,8 @@ input {
 }
 
 .card-main .card-m-content{
-    width: 67%;
+    width: 100%;
+    max-height: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -326,18 +327,27 @@ input {
 }
 
 .card-m-txt  {
-    white-space: nowrap;
+    text-align: justify;
+    max-width: 100%;
 }
 
 .card-m-txt h3 {
     margin: 0;
     margin-top: 5px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .card-m-txt p {
     margin: 0;
     display: inline-block;
     margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.card-m-rating {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /****** Populaires ***********/
@@ -402,7 +412,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
-
+    text-align: justify;
 }
 
 .activities-card .card {
@@ -424,6 +434,8 @@ input {
 
 .activities-card h3 {
     padding: 20px;
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 /*****Footer*******/
@@ -701,6 +713,11 @@ input {
         width: auto;
     }
 
+    .activites {
+        padding: 20px;
+        gap: 20px;
+    }
+
     .activities-card {
         display: flex;
         flex-direction: column;
@@ -709,6 +726,7 @@ input {
     .activities-card .card {
         width: auto;
         height: 200px;
+        padding: 5px;
     }
 
     .activities-card img {
